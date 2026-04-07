@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journey of My Life - Kyross Geane Palen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== GLOBAL BACKGROUND MUSIC ==================== -->
+  <div class="music-player">
+    <audio id="bg-music" loop>
+      <source src="indexbackgroundmusic.mp3" type="audio/mpeg">
+    </audio>
+    <span style="font-size: 0.85rem; opacity: 0.9;">🎵</span>
+    <button onclick="
+      const a = document.getElementById('bg-music');
+      if (a.paused) { a.play(); this.textContent = '⏸'; }
+      else { a.pause(); this.textContent = '▶'; }
+    " style="background:none;border:none;color:white;font-size:1.2rem;cursor:pointer;">⏸</button>
+  </div>
+
+  <!-- ==================== PAGE: TITLE ==================== -->
+  <div id="page-title" class="page active">
+
+    <h1>✨ The Journey of My Life ✨</h1>
+    <h2>by Kyross Geane Palen</h2>
+    <button class="enter-btn" data-page="introduction">Enter My Story →</button>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: INTRODUCTION ==================== -->
+  <div id="page-introduction" class="page">
+
+    <h1>🌟 Introduction 🌟</h1>
+
+    <div class="typewriter">
+      Hello! Maligayang pagbati, ako si Kyross Geane Palen, at 20 years old na ako, at nakatira ako sa Pasig City, at ito ang kwento ng aking paglalakbay sa puno ng paglago, aral, at mga pangarap.
+    </div>
+
+    <div class="fade-text">
+      Sa website na ito, ang purpose nito ay maginspire sa lahat ng mga estudyante, guro, at sa lahat ng mga kaibigan at ang mga pangunahing tema ng aking autobiography. Mula sa aking mga pinagmulan hanggang sa aking mga pangarap para sa hinaharap, inaasahan kong maibahagi ang mga mahahalagang detalye ng aking buhay at ang mga aral na aking natutunan sa lahat.
+    </div>
+
+    <div class="nav-buttons">
+      <button data-page="title">← Previous</button>
+      <button data-page="childhood">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: CHILDHOOD ==================== -->
+  <div id="page-childhood" class="page content-page">
+
+    <header>
+      <h1>🌈 My Childhood Days 🌈</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="childhoodphoto.jpg" alt="Childhood Photo">
+      </div>
+      <div class="text">
+        <p>
+          Ipinanganak ako sa <strong>Marikina City</strong> sa <strong>Pabillia Hospital</strong>.
+          Ang mga magulang ko ay sina <strong>Mama Analuz</strong> at <strong>Papa Jose</strong>.
+          May bunso rin akong kapatid na si <strong>Dodong</strong> at sobrang mahalaga sila sa akin.
+        </p>
+        <p>
+          Noong kabataan ko, <strong>masaya pa ako dati</strong> kasi wala pang masyadong ginagawa puro laro at tawa lang.
+          Mahilig akong maglaro kahit saan, lalo na sa <strong>computer</strong>, at naligo rin ako sa <strong>dagat</strong> noon, at
+          iyon talaga ang <strong>hindi ko malilimutan</strong> sa aking pagkabata.
+        </p>
+        <p>
+          Sa <strong>school experience</strong> ko naman, sobrang saya rin!
+          Madalas kaming maglaro ng <strong>lastiko</strong>, <strong>pogs</strong>, at <strong>luksong baka</strong> kapag wala si teacher.
+          Minsan suntukan din ang nauuwi kaya napatawag ako sa <strong>guidance</strong> 😅.
+          Pero sa kabila ng lahat, punô ng masasayang alaala ang aking pagkabata.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="introduction">← Previous</button>
+      <button data-page="education">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: EDUCATION ==================== -->
+  <div id="page-education" class="page content-page">
+
+    <header>
+      <h1>🎓 My Education Journey 🎓</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="educationphoto.jpg" alt="My School Days Photo">
+      </div>
+      <div class="text">
+        <p>
+          Noong elementary days ko, isa ako sa mga <strong>Top 6</strong> sa klase,
+          Masaya ako noon kasi kahit hindi ako naging top 1, alam kong <strong>pinaghirapan ko</strong> rin ang mga naabot ko,
+          Sa totoo lang, hindi pa ako ganoon kaseryoso noon kulang pa sa disiplina at focus sa pag-aaral.
+        </p>
+        <p>
+          Pero <strong>maswerte ako sa mga guro ko</strong>, lalo na kay <strong>Sir Mario Guro</strong> isa siyang mabait na teacher,
+          Kahit mababa ang grado ko noon, pinasa pa rin niya ako dahil nakita niya ang potensyal ko,
+          Dahil doon, naging <strong>Top 6 overall</strong> ako sa klase!
+        </p>
+        <p>
+          Isa sa mga <strong>challenges</strong> ko noon ay wala akong cellphone,
+          kaya computer lang talaga ang ginagamit ko, Hindi rin ako mahilig sa social media
+          mas gusto ko ang <strong>mag-aral at maggala kasama ang mga kaibigan</strong>.
+        </p>
+        <p>
+          Sa mga <strong>inspirasyon</strong> ko noon, nariyan si Sir Guro at ang mga kaklase kong nagturo sa akin
+          kung paano maging mahusay sa <strong>pakikipag-usap, kulitan, at pakikisama</strong>,
+          Ang <strong>favorite subject</strong> ko noon ay <strong>ESP</strong>, pati <strong>Science</strong> at <strong>Math</strong>.
+          Hilig ko rin noon ang <strong>Chess</strong> at <strong>Damath</strong> pero ngayon, medyo kinalawang na ako 😅.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="childhood">← Previous</button>
+      <button data-page="family">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: FAMILY ==================== -->
+  <div id="page-family" class="page content-page">
+
+    <header>
+      <h1>👨‍👩‍👧‍👦 Family and Friends 👨‍👩‍👧‍👦</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="familyphoto.jpg" alt="My Family and Friends Photo">
+      </div>
+      <div class="text">
+        <p>
+          Ang pamilya ko ay <strong>napakahalaga sa buhay ko</strong>,
+          Sila ang dahilan kung bakit ako patuloy na nagsusumikap,
+          Sila ang <strong>sumusuporta sa aking pag-aaral</strong> at sa lahat ng gastusin
+          pagkain, ilaw, kuryente, at iba pa,
+          Sila rin ang <strong>nagpapasaya sa akin</strong> sa mga panahong pagod ako o nalulungkot.
+        </p>
+        <p>
+          Sa mga <strong>kaibigan ko</strong> naman, sila ang mga taong nagbibigay ngiti sa akin
+          kahit mabigat na ang lahat,
+          Kahit paminsan-minsan lang kami mag-usap, solid pa rin ang kulitan,
+          harutan sa chat, at mga kalokohan naming di malilimutan,
+          Isa rin sila sa mga <strong>naginspire sa akin</strong> para maging mas mahusay pa.
+        </p>
+        <p>
+          Marami akong <strong>natutunan</strong> sa kanila lalo na ang <strong>magpakumbaba</strong>,
+          maging <strong>matatag sa lahat ng hamon</strong>, at patuloy na magsikap sa bawat bagay,
+          Mahal na mahal ko silang lahat.
+        </p>
+        <p>
+          Isa sa mga <strong>pinaka nakakatawang memorya</strong> namin noon, ay nung
+          ginagamit namin ang remote ng TV Plus para patayin ang TV ng kapitbahay namin 😆,
+          Akala nila minumulto sila! Tawa kami nang tawa habang nagtatago,
+          Isa pa ay yung pinapatay namin ang ilaw sa CR habang may tumatae
+          sabay takbo palayo habang tawa kami nang tawa!
+          Grabe talaga, <strong>sobrang saya ng kabataan namin</strong>.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="education">← Previous</button>
+      <button data-page="challenges">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: CHALLENGES ==================== -->
+  <div id="page-challenges" class="page content-page">
+
+    <header>
+      <h1>🌱 Challenges and Life Lessons 🌱</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="challengesphoto.jpg" alt="My Challenges and Life Lessons Photo">
+      </div>
+      <div class="text">
+        <p>
+          Isa sa mga <strong>pinakamabigat kong challenges</strong> dati ay nung sabay-sabay ang mga exams sa halos lahat ng major subjects,
+          Parang walang oras para matapos ang lahat sa isang araw lang,
+          Sobrang dami ng dapat aralin at isipin kaya sabi ko sa sarili ko,
+          <em>"Plan D muna to kung hanggang saan lang kaya, hanggang doon lang muna."</em>
+        </p>
+        <p>
+          Pero sa kabila ng lahat, <strong>dasal lang at practice nang practice</strong> talaga,
+          Hanggang sa natutunan kong i-visualize at i-imagine lahat ng mga lessons,
+          isa-isa kong nakayanan kahit gaano kahirap,
+          Natutunan kong huwag mawalan ng pag-asa, kahit nakakapagod.
+        </p>
+        <p>
+          Isa rin sa mga <strong>failure ko noon</strong> ay nung bumagsak ako sa isang subject,
+          Kahit anong pagod at effort, zero pa rin kasi sobrang higpit ng prof —
+          isang pagkakamali lang, bagsak agad, walang exception,
+          Pero tinanggap ko yun,
+          Kasi sabi ko sa sarili ko, <em>"Kung bumagsak man ako ngayon, babawi ako bukas."</em>
+        </p>
+        <p>
+          Kaya isa sa mga <strong>life lessons</strong> ko ay ang <strong>pagtanggap at pagpapatuloy</strong>,
+          Hindi mo kailangang sumuko kahit minsan magfail ka,
+          Dapat matutunan mong bumangon ulit,
+          magpakabait, magpakumbaba, at ipasa ang lahat ng pagsubok sa buhay.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="family">← Previous</button>
+      <button data-page="achievements">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: ACHIEVEMENTS ==================== -->
+  <div id="page-achievements" class="page content-page">
+
+    <header>
+      <h1>🏆 Achievements and Success 🏆</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="achievementsphoto.jpg" alt="My Achievements Photo">
+      </div>
+      <div class="text">
+        <p>
+          Isa sa mga <span class="highlight">pinaka-maipagmamalaki kong parangal</span> ay noong senior high school ako,
+          sa aming research na tungkol sa <strong>Weather Forecasting using Regression Analysis</strong>,
+          Gamit ang <strong>Python Programming</strong>, kinuha namin ang mga data gaya ng
+          <em>precipitation, humidity, pressure, wind, at cloud information</em> para ma-predict ang panahon
+          nang may halos <strong>88% accuracy</strong>.
+        </p>
+        <p>
+          Isa ito sa mga pinakamabigat na project, pero dahil sa teamwork at dedication, naging maayos at precise ang kinalabasan.
+          Sa research fair, ibat ibang klase na yung ginawa ng kaibigan namin may <em>Arduino robots</em>, <em>turbine energy systems</em>,
+          at <em>solar wind projects</em> na ginastusan pa ng ₱20,000 pataas.
+          Pero kahit simple lang ang amin, <strong>kami ang naging Top 1 sa buong Senior High</strong>.
+        </p>
+        <p>
+          Nang inilaban kami sa <strong>Division level</strong>, nakalaban namin ang science school at mga kilalang paaralan,
+          Doon, nakuha namin ang <strong>7th place overall</strong> sa buong division
+          at para sa amin, iyon ay <em>panalo na rin</em>.
+        </p>
+        <p>
+          Mula sa karanasang iyon, <strong>hinubog kami ng research</strong>
+          napalalim ang aming pag-iisip, imahinasyon, at kakayahang mag-analisa ng problema,
+          Doon ko rin natutunan na hindi lang resulta ang mahalaga, kundi ang <strong>disiplina at pag-improve ng sarili</strong>.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="challenges">← Previous</button>
+      <button data-page="growth">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: GROWTH ==================== -->
+  <div id="page-growth" class="page content-page">
+
+    <header>
+      <h1>🌅 Personal Growth and Beliefs 🌅</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="growthphoto.jpeg" alt="Personal Growth Photo">
+      </div>
+      <div class="text">
+        <p>
+          Sa paglipas ng panahon, marami akong <span class="highlight">natutunan</span> hindi lang sa sarili kundi sa mga
+          bagay na nangyari sa paligid ko. Natuto akong tanggapin ang mga pagkakamali ko dati at hindi na iyon uulitin,
+          kasi minsan, ang sakit talaga ng resulta kapag mali ang naging desisyon mo.
+        </p>
+        <p>
+          Dati, halos sumuko na ako sa mga problema, pero natutunan kong
+          <span class="highlight">huwag sumuko</span> dahil kapag sumuko ka, lalo lang magiging mahirap ang lahat.
+          Araw-araw dapat <span class="highlight">nag-iimprove tayo</span>, kahit maliit lang, basta tuloy-tuloy.
+        </p>
+        <p>
+          Sa mundong ito, kailangan nating piliing maging <strong>mabuting tao</strong>. Dahil kung gagawa tayo ng masama,
+          babalik din sa atin iyon balang araw — <em>karma</em> nga, ika nila. Kaya mas pinili kong ayusin ang sarili ko
+          araw-araw, unti-unting binabago ang mga mali kong gawi.
+        </p>
+        <p>
+          Naranasan ko rin ang <strong>pain of regret</strong> at iyon ang nagturo sa akin kung paano maging mas matatag,
+          Sa bawat sakit, doon ako <span class="highlight">nag-mature</span>, doon ako natutong magpatawad sa sarili at
+          magpatuloy sa buhay.
+        </p>
+        <p>
+          Hanggang ngayon, mino-monitor ko lagi ang sarili ko kapag nagkakamali ako. Kasi kapag hindi mo minomonitor ang sarili mo,
+          babalik ka lang sa dati mong mga gawi at ayaw ko na yon. Kaya kahit mahirap at nakaka-pressure minsan,
+          tuloy lang sa pag-improve at paghubog ng sarili.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="achievements">← Previous</button>
+      <button data-page="present">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: PRESENT ==================== -->
+  <div id="page-present" class="page content-page">
+
+    <header>
+      <h1>💭 Present Life 💭</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="presentphoto.jpg" alt="Present Life Photo">
+      </div>
+      <div class="text">
+        <p>
+          Sa kasalukuyan, <span class="highlight">nag-aaral pa rin ako</span> — pahinga, sabay laban ulit. Minsan may iyak, pero
+          laban pa rin. Ganito siguro talaga ang buhay estudyante, paulit-ulit ang cycle — aral, tulog, kain, pahinga,
+          tapos balik ulit sa aral.
+        </p>
+        <p>
+          Naiisip ko rin ang mga <span class="highlight">working students</span> — saludo talaga ako sa kanila. Kasi habang
+          nagtatrabaho at napapagod, nag-aaral pa rin sila. Sobrang bigat noon, kaya pakiramdam ko ay maswerte ako dahil may
+          sumusuporta sa pag-aaral ko.
+        </p>
+        <p>
+          Kapag may oras ako, <strong>nagpapahinga</strong> ako, minsan gala ng konti bago bumalik sa pag-aaral. Dati hilig
+          ko mag-chess, basketball, at Rubiks cube, pero ngayon pahinga na muna — focus sa laban ng buhay.
+        </p>
+        <p>
+          Sa usapang <strong>relasyon</strong>, single ako ngayon 😅. Kapag naiisip ko yon, parang mabigat pa sa isip.
+          Kaya sabi ko, <span class="highlight">pass muna</span>. Hanggang tingin lang muna ako, kasi gusto ko muna ayusin ang sarili ko.
+        </p>
+        <p>
+          At sa motivation naman — dati, mabilis mawala ang gana ko. Kaya ngayon, hindi na ako umaasa sa motivation,
+          kundi sa <span class="highlight">disiplina</span>. Kasi kapag disiplinado ka, tuloy-tuloy ka kahit wala nang gana.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="growth">← Previous</button>
+      <button data-page="future">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: FUTURE ==================== -->
+  <div id="page-future" class="page content-page">
+
+    <header>
+      <h1>🌅 Future Plans and Dreams 🌅</h1>
+    </header>
+
+    <section class="content">
+      <div class="photo">
+        <img src="futurephoto.webp" alt="Future Plans Photo">
+      </div>
+      <div class="text">
+        <p>
+          Ang pangunahing <span class="highlight">layunin ko ngayon</span> ay makapagtapos ng pag-aaral at makuha ang aking degree.
+          Pangarap kong maabot ang mga bagay na dati'y tanging imahinasyon lang — lalo na ang magkaroon ng
+          <strong>magandang bahay</strong> para sa pamilya ko.
+        </p>
+        <p>
+          Wala pa kaming modernong bahay, pero patuloy akong <span class="highlight">nangarap at mag-iipon</span> para sa hinaharap.
+          Kahit minsan imposible, patuloy akong mangangarap at kikilos para makamit iyon.
+        </p>
+        <p>
+          Sa sarili kong pagtingin sa hinaharap, gusto kong maging <strong>breadwinner</strong>
+          para maipahinga na si papa sa trabaho at ako naman ang susunod.
+          Kasi alam kong tumatanda na sila, at gusto kong ako naman ang bumawi sa lahat ng sakripisyo nila.
+        </p>
+        <p>
+          Hindi ko hinahangad ang sobrang yaman, pero gusto kong maging <span class="highlight">matagumpay</span> —
+          magkaroon ng bahay, mapayapang buhay, at kakayahang tumulong sa iba.
+          Sa ganun, masasabi kong nagtagumpay ako hindi lang para sa sarili, kundi para rin sa pamilya at sa mga taong mahal ko.
+        </p>
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <button data-page="present">← Previous</button>
+      <button data-page="conclusion">Next →</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <!-- ==================== PAGE: CONCLUSION ==================== -->
+  <div id="page-conclusion" class="page">
+
+    <div class="stars-overlay"></div>
+    <div class="dots-overlay"></div>
+
+    <div class="container">
+      <div class="photo">
+        <img src="conclusionphoto.webp" alt="Conclusion Photo">
+      </div>
+      <div class="text">
+        <h1>Conclusion</h1>
+        <p>
+          Sa kabuuan ng lahat, tinuruan ako ng buhay kung paano maging patient, magpakumbaba, at maging tahimik rin.
+          Natutunan ko rin kung paano maging kalmado sa lahat ng bagay, maging mahusay, at hindi maging masamang tao.
+          Hindi dapat sumuko kahit sobrang bigat na ng mga nangyayari.
+          Ang maipapayo ko lang sa mga nagbabasa nito ay tanggapin muna ang buhay, dahil ang buhay ay puno ng uncertainty
+          at endless possibilities — walang katiyakan kung ano ang mangyayari.
+          Kayat araw-araw ay dapat mag-improve sa sarili, at tumulong kung may nangangailangan ng tulong.
+          Yun lang.
+        </p>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="btn-conclusion" data-page="future">⟵ Previous</button>
+      <button class="btn-conclusion" data-page="title">Home 🏠</button>
+    </div>
+
+    <footer>© 2025 | My Autobiography Project</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
